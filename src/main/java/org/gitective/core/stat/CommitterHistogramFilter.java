@@ -24,6 +24,7 @@ package org.gitective.core.stat;
 import java.io.IOException;
 
 import org.eclipse.jgit.lib.PersonIdent;
+import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.revwalk.filter.RevFilter;
@@ -39,7 +40,7 @@ public class CommitterHistogramFilter extends CommitHistogramFilter {
 			throws IOException {
 		final PersonIdent committer = commit.getCommitterIdent();
 		if (committer != null)
-			histogram.include(commit, committer);
+			histogram.include(repository, walker, commit, committer);
 		return true;
 	}
 

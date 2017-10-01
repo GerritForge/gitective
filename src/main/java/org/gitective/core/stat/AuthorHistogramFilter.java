@@ -39,7 +39,7 @@ public class AuthorHistogramFilter extends CommitHistogramFilter {
 			throws IOException {
 		final PersonIdent author = commit.getAuthorIdent();
 		if (author != null)
-			histogram.include(commit, author);
+			histogram.include(repository, walker, commit, author);
 		return true;
 	}
 

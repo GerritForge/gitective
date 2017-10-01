@@ -28,7 +28,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.eclipse.jgit.lib.PersonIdent;
+import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
+import org.eclipse.jgit.revwalk.RevWalk;
 
 /**
  * Commit histogram class that stores and provides commit activity by user
@@ -51,7 +53,9 @@ public class CommitHistogram implements Serializable {
 	 * @param user
 	 * @return this histogram
 	 */
-	public CommitHistogram include(final RevCommit commit,
+	public CommitHistogram include(final Repository repository,
+	    final RevWalk rw,
+      final RevCommit commit,
 			final PersonIdent user) {
 		final String email = user.getEmailAddress();
 		UserCommitActivity activity = users.get(email);
