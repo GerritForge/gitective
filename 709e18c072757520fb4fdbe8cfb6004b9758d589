@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f99bba71_05c578e5",
+        "filename": "src/main/java/org/gitective/core/stat/AuthorHistogramFilter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2017-10-01T13:54:11Z",
+      "side": 1,
+      "message": "Can we possibly put them at the end and keep backward compatibility with overload?\nThat would make this change more likely to be merged quickly :-)",
+      "range": {
+        "startLine": 42,
+        "startChar": 21,
+        "endLine": 42,
+        "endChar": 41
+      },
+      "revId": "709e18c072757520fb4fdbe8cfb6004b9758d589",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "adae5b38_0eda036b",
+        "filename": "src/main/java/org/gitective/core/stat/CommitHistogram.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2017-10-01T13:54:11Z",
+      "side": 1,
+      "message": "JavaDoc is out of sync with the code.\nCan we keep backward compatibility by adding an extra method with default values and put the new params to the end?",
+      "range": {
+        "startLine": 52,
+        "startChar": 0,
+        "endLine": 53,
+        "endChar": 15
+      },
+      "revId": "709e18c072757520fb4fdbe8cfb6004b9758d589",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
